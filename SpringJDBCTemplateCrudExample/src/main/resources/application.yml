@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: /EmployeeDetails
+  datasource:    username: scott
+    password: India123
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+  output:
+    ansi:
+      enabled: always
+    
+logging:
+  level:
+   com:
+    spring:
+     jdbc:
+      crud:
+       example: DEBUG
+   
+ 
+  pattern:
+   console: '%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %logger{36 5}:%L - %msg%n'
+    
+
+ 
+    
